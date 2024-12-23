@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="5FAQs.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Main content container -->
+    <div class="container">
+        <div class="head">
+            <h1>FAQs About Epakluxe</h1>
+            <form action="/search" method="get" class="search-bar">
+                <input type="text" name="query" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <hr> <!-- Horizontal line separating the header and content -->
+                
+        <!-- FAQ items with toggle functionality -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(1)">
+                What is KOFIE?
+            </button>
+            <div id="faq-answer-1" class="faq-answer">
+                <p>KOFIE is a luxurious coffee shop combining premium blends with an elegant atmosphere, offering a variety of beverages.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(2)">
+                What types of coffee Epakluxe offer?
+            </button>
+            <div id="faq-answer-2" class="faq-answer">
+                <p>Epakluxe offers a range of coffee options, including blends and single-origin varieties. 
+                    We have options for every preference, from mild and smooth to bold and full-bodied.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(3)">
+                What makes KOFIE special? 
+            </button>
+            <div id="faq-answer-3" class="faq-answer">
+                <p>Our coffee is made from the finest beans sourced from renowned coffee-growing regions around the world. 
+                    We focus on sustainability, quality, and freshness, ensuring a luxurious coffee experience with every cup.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(4)">
+                Are your drinks customizable?
+            </button>
+            <div id="faq-answer-4" class="faq-answer">
+                <p>Yes! We provide customization options like milk alternatives and flavors.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(5)">
+                How can I join the Epakluxe family?
+            </button>
+            <div id="faq-answer-5" class="faq-answer">
+                <p>Visit our coffee shop or sign up for our newsletter to stay updated on menu items and promotions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social media links section -->
+    <div class="social-links">
+        <a href="https://www.instagram.com" target="_blank" class="social-link">
+            <i class='bx bxl-instagram-alt'></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="social-link">
+            <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="social-link">
+            <i class='bx bxl-twitter'></i>
+        </a>
+    </div>
+
+    <nav>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">KOFI</span>
+        </div>
+  
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">KOFI</span>
+          </div>
+  
+          <div class="sidebar-content">
+            <ul class="lists">
+                <li class="list">
+                    <a href="1Mainpage.html" class="nav-link">
+                      <i class="bx bx-home-heart icon"></i>
+                      <span class="link">Home</span>
+                    </a>
+                </li>
+
+              <li class="list">
+                <a href="4Menu.html" class="nav-link">
+                  <i class='bx bx-food-menu icon'></i>
+                  <span class="link">Menu</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="2JoinUs.html" class="nav-link">
+                  <i class="bx bx-group icon"></i>
+                  <span class="link">Join us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="3LearnMore.html" class="nav-link">
+                  <i class="bx bx-info-circle icon"></i>
+                  <span class="link">Learn more</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                    <i class="bx bx-message-rounded-error icon"></i>
+                    <span class="link">FAQs</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="0mems5.html" class="nav-link">
+                  <i class="bx bxs-briefcase icon"></i>
+                  <span class="link">OUR TEAM</span>
+                </a>
+              </li>
+            </ul>
+  
+            <div class="bottom-cotent">
+              <li class="list">
+                <a href="5FAQs.html" class="nav-link">
+                  <i class="bx bx-cog icon"></i>
+                  <span class="link">Settings</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="overlay"></section>
+    
+    <!-- FAQs JavaScript-->
+    <script src="5FAQs.js"></script>
+</body>
+</html>

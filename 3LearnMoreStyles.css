@@ -1,0 +1,267 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6eddd;
+    margin: 0;
+    padding: 0;
+    color: #7b573c;
+    min-height: 100%;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.head {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #7b573c;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    height: 35px;
+    width: 250px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1.5px solid #7b573c;
+    margin-right: 10px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #7b573c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #e0b78f;
+}
+
+hr {
+    margin-top: 10px;
+    border: none;
+    height: 3px;
+    background-color: #7b573c;
+}
+
+.content {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.section {
+    background-color: rgba(123, 87, 60, 0.1);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0 30px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #7b573c;
+}
+
+.section p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table td {
+    vertical-align: top;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+table td div {
+    margin: 0;
+    padding: 0;
+}
+
+table td h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+table td p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Social media links */
+.social-links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 100px;
+}
+
+/* Footer */
+.footer {
+    background-color: #7b573c;
+    color: #f1d0a5;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.footer a {
+    color: #f1d0a5;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #e0b78f;
+}
+
+.button {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #f7e2c6;
+    background-color: #000000;
+    border-radius: 20px; 
+    text-decoration: none; /* Cleaner link button style */
+    margin-top: 10px;
+    
+}
+
+.button-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 40px;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(133, 110, 91);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+  nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+  }
+  .logo .menu-icon {
+    color: #554530;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+  .logo .logo-name {
+    color: #554530;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  nav .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 262px;
+    padding: 20px ;
+    background-color: #f6eddd;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+  nav.open .sidebar {
+    left: 0;
+  }
+  .sidebar .sidebar-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+  }
+  .sidebar-content .list {
+    list-style: none;
+  }
+  .list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .lists .nav-link:hover {
+    background-color: #61442d50;
+  }
+  .nav-link .icon {
+    margin-right: 24px;
+    font-size: 20px;
+    color: #8b7158;
+  }
+  .nav-link .link {
+    font-size: 16px;
+    color: #8b7158;
+    font-weight: 400;
+  }
+  .lists .nav-link:hover .icon,
+  .lists .nav-link:hover .link {
+    color: #8b7158;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  nav.open ~ .overlay {
+    opacity: 1;
+    left: 262px;
+    pointer-events: auto;
+  }
+  
+  
+  

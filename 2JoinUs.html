@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2JoinUsStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+        <div class="form-box Login">
+            <h2 class="animation" style="--i:0; --j:21;">Login</h2>
+            <form action="#">
+
+                <div class="input-box animation" style="--i:1; --j:22;">
+                    <input id="UsernameLogin" type="text" required>
+                    <label for="UsernameLogin">Username</label>
+                    <i class="bx bxs-user"></i>
+                </div>
+
+                <div class="input-box animation" style="--i:2; --j:23;">
+                    <input id="PasswordLogin" type="password" required>
+                    <label for="PasswordLogin">Password</label>
+                    <i class="bx bx-show toggle-password" data-target="PasswordLogin"></i>
+                </div>
+
+                <div class="input-box animation" style="--i:3; --j:24;">
+                    <button class="btn animation" type="submit">Login</button>
+                </div>
+
+                <div class="regi-link animation" style="--i:4; --j:25;">
+                    <p>Don't have an account? <a href="#" class="SignUpLink">Sign Up </a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-content Login">
+            <h2 class="animation" style="--i:0;  --j:20;">WELCOME BACK!</h2><br>
+            <p class="animation" style="--i:1;  --j:21;">It’s been a while since your last sip! Treat yourself to something special today.</p>
+        </div>
+
+        <div class="form-box Register">
+            <h2 class="animation" style="--i:17; --j:0;">Sign Up</h2>
+            <form action="#">
+
+                <div class="input-box animation" style="--i:18; --j:1;">
+                    <input id="UsernameRegister" type="text" required>
+                    <label for="UsernameRegister">Username</label>
+                    <i class="bx bxs-user"></i>
+                </div>
+
+                <div class="input-box animation" style="--i:19; --j:2;">
+                    <input id="email" type="text" autocomplete="email" required>
+                    <label for="email">Email</label>
+                    <i class="bx bxs-envelope"></i>
+                </div>
+
+                <div class="input-box animation" style="--i:20; --j:3;">
+                    <input id="PasswordRegister" type="password" required>
+                    <label for="PasswordRegister">Password</label>
+                    <i class="bx bx-show toggle-password" data-target="PasswordRegister"></i>
+                </div>
+
+
+                <div class="input-box animation">
+                    <button class="btn animation" style="--i:21; --j:4;" type="submit">Sign Up</button>
+                </div>
+
+                <div class="regi-link animation" style="--i:22; --j:5;">
+                    <p>Don't have an account? <a href="#" class="SignInLink">Log In </a></p>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="info-content Register">
+            <h2 class="animation" style="--i:17; --j:0;">Join the Epakluxe Today</h2><br>
+            <p class="animation" style="--i:18; --j:1;">Sip, Hatdog, and Enjoy Exclusive Perks!</p>
+        </div>
+
+    </div>
+
+
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">KOFI</span>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">KOFI</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+              <li class="list">
+                  <a href="1Mainpage.html" class="nav-link">
+                    <i class="bx bx-home-heart icon"></i>
+                    <span class="link">Home</span>
+                  </a>
+              </li>
+
+            <li class="list">
+              <a href="4Menu.html" class="nav-link">
+                <i class='bx bx-food-menu icon'></i>
+                <span class="link">Menu</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="2JoinUs.html" class="nav-link">
+                <i class="bx bx-group icon"></i>
+                <span class="link">Join us</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="3LearnMore.html" class="nav-link">
+                <i class="bx bx-info-circle icon"></i>
+                <span class="link">Learn more</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="5FAQs.html" class="nav-link">
+                  <i class="bx bx-message-rounded-error icon"></i>
+                  <span class="link">FAQs</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="0mems5.html" class="nav-link">
+                <i class="bx bxs-briefcase icon"></i>
+                <span class="link">OUR TEAM</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  <section class="overlay"></section>
+  <script src="2JoinUs.js"></script>
+
+    
+</body>
+</html>

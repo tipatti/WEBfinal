@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Menu</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="4MenuStyles.css">
+
+   
+</head>
+<body>
+   
+<!-- custom js file link  -->
+<script src="4Menu.js" defer></script>
+
+<div class="container">
+
+   <h3 class="title"> Categories </h3>
+
+   <div class="products-container">
+
+      <!-- Existing products -->
+      <div class="product" data-name="p-1">
+         <img src="HotCoffees/Caffe Americano.svg" alt="Hot Coffees">
+         <div class="price"><h3>Hot Coffees</h3></div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="ColdCoffees/Chocolate Cream Cold Brew.svg" alt="Cold Coffees">
+         <div class="price"><h3>Cold Coffees</h3></div>
+      </div>
+
+      <!-- Additional products -->
+      <div class="product" data-name="p-3">
+         <img src="Iced Tea & Lemonade/Iced Black Tea Lemonade.svg" alt="Iced Tea & Lemonade">
+         <div class="price"><h3>Iced Tea & Lemonade</h3></div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="Frappuccino/Caramel Ribbon Cruch Creme.svg" alt="Frappuccino">
+         <div class="price"><h3>Frappuccino</h3></div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="HotTeas/Emperor's Clouds & Mist.svg" alt="HotTeas">
+         <div class="price"><h3>Hot Teas</h3></div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="Bakery/Baked Apple Croissant.svg" alt="Bakery">
+         <div class="price"><h3>Bakery</h3></div>
+      </div>
+
+   </div>
+</div>
+
+<div class="products-preview">
+
+   <!-- Existing previews -->
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="HotCoffees/Caffe Americano.svg" alt="Hot Coffees">
+      <div class="price"><h3>Hot Coffees</h3></div>
+      <p>Warm your soul, one sip at a time.</p>
+      <div class="buttons">
+         <a href="#" class="cart">View All</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="ColdCoffees/Chocolate Cream Cold Brew.svg" alt="Cold Coffees">
+      <div class="price"><h3>Cold Coffees</h3></div>
+      <p>Cool down with every sip.</p>
+      <div class="buttons">
+         <a href="#" class="cart">View All</a>
+      </div>
+   </div>
+
+   <!-- Additional previews -->
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="Iced Tea & Lemonade/Iced Black Tea Lemonade.svg" alt="Iced Tea & Lemonade">
+      <div class="price"><h3>Iced Tea & Lemonade</h3></div>
+      <p>A bold and rich coffee experience.</p>
+      <div class="buttons">
+         <a href="#" class="cart">View All</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="Frappuccino/Caramel Ribbon Cruch Creme.svg" alt="Frappuccino">
+      <div class="price"><h3>Frappuccino</h3></div>
+      <p>Smooth and creamy coffee perfection.</p>
+      <div class="buttons">
+         <a href="#" class="cart">View All</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="HotTeas/Emperor's Clouds & Mist.svg" alt="HotTeas">
+      <div class="price"><h3>HotTeas</h3></div>
+      <p>Chocolate meets coffee in harmony.</p>
+      <div class="buttons">
+         <a href="#" class="cart">View All</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="Bakery/Baked Apple Croissant.svg" alt="Bakery">
+      <div class="price"><h3>Bakery</h3></div>
+      <p>A delightful balance of foam and coffee.</p>
+      <div class="buttons">
+         <a href="#" class="cart">View All</a>
+      </div>
+   </div>
+   
+</div>
+
+
+<nav>
+  <div class="logo">
+    <i class="bx bx-menu menu-icon"></i>
+    <span class="logo-name">KOFI</span>
+  </div>
+
+  <div class="sidebar">
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <span class="logo-name">KOFI</span>
+    </div>
+
+    <div class="sidebar-content">
+      <ul class="lists">
+          <li class="list">
+              <a href="1Mainpage.html" class="nav-link">
+                <i class="bx bx-home-heart icon"></i>
+                <span class="link">Home</span>
+              </a>
+          </li>
+
+        <li class="list">
+          <a href="4Menu.html" class="nav-link">
+            <i class='bx bx-food-menu icon'></i>
+            <span class="link">Menu</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="2JoinUs.html" class="nav-link">
+            <i class="bx bx-group icon"></i>
+            <span class="link">Join us</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="3LearnMore.html" class="nav-link">
+            <i class="bx bx-info-circle icon"></i>
+            <span class="link">Learn more</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="5FAQs.html" class="nav-link">
+              <i class="bx bx-message-rounded-error icon"></i>
+              <span class="link">FAQs</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="0mems5.html" class="nav-link">
+            <i class="bx bxs-briefcase icon"></i>
+            <span class="link">OUR TEAM</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="bottom-cotent">
+        <li class="list">
+          <a href="#" class="nav-link">
+            <i class="bx bx-cog icon"></i>
+            <span class="link">Settings</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#" class="nav-link">
+            <i class="bx bx-log-out icon"></i>
+            <span class="link">Logout</span>
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="overlay"></section>
+
+</body>
+</html>

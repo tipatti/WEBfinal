@@ -1,0 +1,121 @@
+body {
+    background: url(robloxxxx.jpg);
+    background-color: rgba(54, 49, 49, 0.589);
+    background-blend-mode: multiply;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #f8f2f2;
+}
+
+.exit {
+    font-size: 14px;
+    color: #ffffff;            /* Initial color of text and icon */
+    text-decoration: none;     /* Removes underline for links */
+    display: inline-flex;      /* Aligns icon and text horizontally */
+    align-items: center;       /* Vertically aligns icon and text */
+    transition: color 0.2s ease; /* Smooth color transition for text/icon */
+    margin-left: 0;            /* Ensures the button starts from the left */
+    float: left;               /* Moves the button to the left */
+}
+
+.exit:hover {
+    color: rgb(43, 112, 43);     /* Changes text and icon color to red on hover */
+}
+
+.icon {
+    margin-right: 8px;         /* Space between icon and text */
+    font-size: 30px;           /* Size of the icon */
+    transition: color 0.2s ease; /* Smooth color transition for the icon */
+}
+
+
+
+.container .title img {
+    width: 50rem;
+    margin: 150px 0 50px;
+}
+
+
+/* Team Container */
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 45px; /* Increased spacing */
+}
+
+/* Individual Member */
+.member {
+    text-align: center;
+    flex: 1;
+    max-width: 220px;
+     
+}
+
+/* Remove underline and style links */
+.member a {
+    text-decoration: none; 
+    color: inherit; 
+    transition: color 0.3s;
+}
+
+.member a:hover {
+    color: #d9dde0; 
+}
+
+.member img {
+    width: 220px; 
+    height: 220px; 
+    border-radius: 35%;
+    border: 2px solid rgba(11, 159, 196, 0.932);
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.932);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.member img:hover {
+    transform: scale(1.2) rotate(-5deg); /* Scale up*/
+    border: 2px solid rgba(196, 11, 11, 0.932);
+    box-shadow: 0 0 16px rgba(255, 0, 0, 0.932);
+    transition: transform .3s, box-shadow 0.3s ; /* Smooth transition */
+}
+
+/* Name Box Styling */
+.member p {
+    font-size: 1.2rem; 
+    color: #0c0b0b;
+    margin: 0;
+    font-weight: bold;
+    background-color: #a3a29f; 
+    padding: 10px 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Rotate the box slightly to the left on hover */
+
+/* Rotate the box more to the left on click */
+.member img:active {
+    transform: scale(1.05) rotate(-360deg); /* Rotate further left when clicked */
+    box-shadow: 0 0px 10px rgba(255, 0, 0, 0.932); /* Enhance shadow */
+    border-radius: 50%;
+    transition: transform .09s ease-in, box-shadow 0.1s ease-in; /* Quick transition for click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column; /* Stack members vertically on small screens */
+    }
+
+    .member {
+        max-width: 250px; /* Adjust size for mobile view */
+    }
+}
